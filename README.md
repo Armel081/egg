@@ -1,7 +1,7 @@
 # Egg
 
 ## About
-A dumb little site i made to test out CSS animations, using a Javascript colorpicker, dynamically changing the favicon, and some other stuff through JS. This site is not intended to be used or taken seriously.
+A dumb little site i made to test out CSS animations, using a Javascript colorpicker, dynamically changing the favicon, and some other stuff through JS. In case it wasn't obvious, this site is not intended to be used or taken seriously.
 
 ### INSTRUCTIONS
 
