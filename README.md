@@ -9,7 +9,7 @@ A dumb little site i made to test out CSS animations, using a Javascript colorpi
 
 #### Attributions
 
-[JScolor.js](https://jscolor.com/) for the library used for the color picker.
+[jscolor.js](https://jscolor.com/) for the library used for the color picker.
 
 [JQuery](https://jquery.com/) used for some miscellaneous scripts in the website.
 
