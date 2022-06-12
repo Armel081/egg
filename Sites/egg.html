@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+h1 {
+    color: white;
+    font-size: 50mm;
+    font-family: 'Comic Neue', cursive;
+    text-align: center;
+    user-select: none;
+    opacity: 0%;      
+}
+
+h1:hover {
+    opacity: 100;
+    animation-name: fade-in;
+    animation-duration: 10s;
+}
+    
+html {
+    background-color: black;
+}
+
+button {
+    border-radius: 100px;
+    border-color: #FFF;
+    user-select: none;
+    width: 35px;
+    height: 35px;
+    margin: 20px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+</style>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>egg</title>
+    <meta name="keywords" content="egg, test, clicker">
+    <meta name="author" content="Armel Mahmutovic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" id="favicon" href="../Assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1 id="h1text" onclick="playAudio()">egg</h1>
+    <button style="border-radius: 100px; border-color: #FFF;" class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'}"></button>
+    <audio id="audio" src="../Assets/Media/egg.wav"></audio>
+</body>
+</html>
+<script src="../Assets/jscolor.js"></script>
+<script src="../Assets/jQuery-3.6.0.slim.js"></script>
+<script>
+    /*audio onClick*/
+    function playAudio() {
+    const origAudio = document.getElementById("audio");
+    const newAudio = origAudio.cloneNode()
+    newAudio.play()
+}
+    /*jscolor*/
+    function setTextColor(picker) {
+		document.getElementsByTagName('h1')[0].style.color = '#' + picker.toString()
+	}
+
+// favicon & cursor
+
+$("h1").hover(function(){
+    $("#favicon").attr("href","../Assets/favicon2.ico");
+    document.getElementById("h1text").style.cursor = "pointer";
+    }, function(){
+    $("#favicon").attr("href","../Assets/favicon.ico");
+});
+</script>
